@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG Fellowship Portal | AMDA/PALTC 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #27ae60;
+            --bg: #f4f7f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            color: var(--primary);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), 
+                        url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        h1 { font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 10px; }
+        .hero-subtitle { font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+
+        .main-content {
+            max-width: 1000px;
+            margin: -50px auto 50px;
+            padding: 0 20px;
+        }
+
+        /* Card Layout */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .nav-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        h2 { font-family: 'Poppins', sans-serif; color: var(--primary); }
+        p { color: #636e72; margin-bottom: 25px; }
+
+        .btn {
+            background: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Fellowship Objectives Section */
+        .objectives {
+            margin-top: 60px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #b2bec3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>IMG Fellows Research & Membership Portal</h1>
+    <p class="hero-subtitle">Empowering International Medical Graduates to lead innovation in Post-Acute and Long-Term Care (PALTC).</p>
+</header>
+
+<div class="main-content">
+    <div class="card-grid">
+        
+        <a href="membership.html" class="nav-card">
+            <div>
+                <div class="icon">🎓</div>
+                <h2>Fellow Membership</h2>
+                <p>Learn how to join AMDA/PALTC as an IMG fellow, access resources, and build your professional network.</p>
+            </div>
+            <span class="btn">View Enrollment Guide</span>
+        </a>
+
+        <a href="guide.html" class="nav-card">
+            <div>
+                <div class="icon">📊</div>
+                <h2>Research Success</h2>
+                <p>A step-by-step masterclass on turning clinical insights into accepted conference abstracts in 4 days.</p>
+            </div>
+            <span class="btn">Start Research Guide</span>
+        </a>
+
+    </div>
+
+    <div class="objectives">
+        <h2>Why this Portal?</h2>
+        <p>The transition to U.S. clinical research can be daunting for IMGs. This portal is designed to provide high-yield, actionable steps to ensure your clinical expertise is recognized at national conferences like AMDA/PALTC 2026. By focusing on <strong>Rapid Systematic Reviews</strong> and <strong>Quality Improvement</strong>, you can contribute to the field regardless of your current facility's research budget.</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 IMG Fellowship Training Initiative | Dedicated to Excellence in LTC
+    </div>
+</div>
+
+</body>
+</html>
